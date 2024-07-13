@@ -1,0 +1,2 @@
+10 Times Result AUC:[0.9611 0.    ])
+10 Times Result F1_score:[0.7097 0.    ]
