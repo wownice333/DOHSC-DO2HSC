@@ -16,8 +16,13 @@ If you have installed above mentioned packages you can skip this step. Otherwise
 
 ## Reproduce graph data results
 
-The code will be available soon.
+To generate results
 
+    python demo_DOHSC.py --DS MUTAG --eval True
+
+or
+
+    python demo_DO2HSC.py --DS MUTAG --eval True
 
 ## Reproduce tabular data results
 
