@@ -100,6 +100,7 @@ def train_DO2HSC(model, train_loader, test_loader, c, nu, epochs, lam, train_cla
         if (epoch % 10 == 0) | (epoch > epochs - 100):
             test_auroc = test_stage_DO2HSC_loader(test_loader, model, c, R_max, R_min, device,
                                                                       train_class, temp_auc)
+            temp_auc = test_auroc
             model.train()
         pbar.set_description(
             "Train_{} Epoch{}| dist: max{:.4}, median{:.4}, min{:.4}| Mutual Loss{:.4} | SVDD Loss{:.4}".format(
